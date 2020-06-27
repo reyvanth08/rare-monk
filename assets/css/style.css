@@ -10,7 +10,6 @@
 html {
   scroll-behavior: smooth;
   cursor: default;
-  overflow-x: hidden;
 }
 
 /*loading screen animation*/
