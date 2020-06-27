@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+
+<head>
+    <!--title & description-->
+    <title>Rare Monk</title>
+    <meta name="description" content="Rare Monk makes it easier to order super soft stylish custom printed 
+    T-shirts that get your message to the world.">
+
+    <!--SEO tags-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--stylesheets-->
+    <!--bootstrap, aos, hover and custom stylesheet-->
+    <!--bootstrap for grids, aos for animations, hover for on hover animations-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./assets/css/hover.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" media="all">
+</head>
+
+
+<!--Bootstrap is used for most grids except a few advanced grids for which CSS was used-->
+
+<body>
+
+    <!--initial loading animation;
+            everythings handled in css-->
+    <div class="spinner-wrapper">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+    <!--main section-->
+    <section class="container-fluid">
+
+        <!--the screen the user sees when the site loads-->
+        <div id="first-page" class="row">
+            <header class="col-12">
+                <nav id="nav" class="row container-fluid">
+
+                    <!--first two divs are for tablets and desktops-->
+                    <div id="logo-div" class="d-none d-sm-inline col-sm-6">
+                        <a href="#">
+                            <img class="logo wiggle" src="./assets/images/raremonk_name.png" alt="raremonk-name">
+                        </a>
+                    </div>
+
+                    <!--main navigation links-->
+                    <div class="d-none d-sm-inline col-sm-6">
+                        <nav class="nav justify-content-end">
+                            <a class="nav-link hvr-underline-from-left" href="#">HOME</a>
+                            <a class="nav-link hvr-underline-from-left" href="#shop-tag">SHOP</a>
+                            <a class="nav-link hvr-underline-from-left" href="#order">ORDER NOW</a>
+                            <a class="nav-link hvr-underline-from-left" tabindex="0" data-toggle="popover"
+                                data-trigger="hover focus" title="All Products" data-placement="bottom">BROWSE</a>
+                        </nav>
+                    </div>
+
+                    <!--popover that appears when you hover on browse-->
+                    <div class="browse d-none">
+                        <ul class="browse-main">
+                            <li><a href="#varsity" class="text-dark">Varsity Jacket</a></li>
+                            <li><a href="#tshirt" class="text-dark">Tees</a></li>
+                            <li><a href="#hoodie" class="text-dark">Hoodies</a></li>
+                            <li><a href="#highneck" class="text-dark">Highneck Jacket</a></li>
+                        </ul>
+                        <ul class="browse-other">
+                            <li><a href="#bottles" class="text-dark">Bottles</a></li>
+                            <li><a href="#cap" class="text-dark">Caps</a></li>
+                            <li><a href="#keyring" class="text-dark">Keychains</a></li>
+                            <li><a href="#watch" class="text-dark">Watches</a></li>
+                            <li><a href="#mug" class="text-dark">Mugs</a></li>
+                            <li><a href="#jeans" class="text-dark">Jeans</a> </li>
+                        </ul>
+                    </div>
+
+                    <!--hamburger menu icon in mobile sites-->
+                    <div id="menu" class="col-1 ham d-sm-none" onclick="openNav()">&#9776;</div>
+
+                    <!--these two divs are for mobile sites-->
+                    <!--mobile site brand name icon-->
+                    <div id="logo-mob" class="col-10 d-sm-none">
+                        <a href="#">
+                            <img class="logo-mob" src="./assets/images/raremonk_name.png" alt="raremonk-name">
+                        </a>
+                    </div>
+
+                    <!--navigation links in the side navigations-->
+                    <div id="mySidenav" class="sidenav d-sm-none">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a class="nav-link" onclick="closeNav()" href="#first-page">HOME</a>
+                        <a class="nav-link" onclick="closeNav()" href="#shop-tag">SHOP</a>
+                        <a class="nav-link" onclick="closeNav()" href="#order">ORDER NOW</a>
+                    </div>
+                </nav>
+            </header>
+
+            <!--first page-->
+            <section id="brand" class="col-12">
+                <div class="row">
+
+                    <!--social media links-->
+                    <div class="col-sm-1 d-none d-sm-block">
+                        <div>
+                            <a href=""><img class="social hvr-grow" src="./assets/images/facebook.svg"
+                                    alt="facebook-icon" /></a>
+                        </div>
+                        <div>
+                            <a href=""><img class="social hvr-grow" src="./assets/images/instagram.svg"
+                                    alt="instagram-icon" /></a>
+                        </div>
+                        <div>
+                            <a href=""><img class="social hvr-grow" src="./assets/images/twitter.svg"
+                                    alt="twitter-icon" /></a>
+                        </div>
+                        <div>
+                            <a href=""><img class="social hvr-grow" src="./assets/images/linkedin.svg"
+                                    alt="instagram-icon" /></a>
+                        </div>
+                    </div>
+
+                    <!--tagline and descriptions + shop now button-->
+                    <div class="col-12 col-sm-5">
+                        <p id="brand-tag-line" data-aos="zoom-in" data-aos-delay="2000" class="tag-line">
+                            CREATE SOMETHING AS UNIQUE AS YOU ARE!</p>
+                    </div>
+                    <div class="col-12 col-sm-6 center-div-btn">
+                        <p id="brand-text" data-aos="zoom-in" data-aos-delay="2000" class="text-content">
+                            Rare Monk makes it <span class="wiggle">easy</span> and super <span class="wiggle">fun
+                            </span>
+                            for you to <span class="wiggle">customise</span> !</p>
+                        <button data-aos="zoom-in" data-aos-delay="3000" class="hvr-grow hvr-sweep-to-right button"
+                            type="button" onclick="window.location.href = '#shop';">SHOP NOW</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mob-sticky-nav" class="col-12 d-sm-none">
+                <div class="row">
+                    <div class="col-6 d-sm-none center-div-btn mob-sticky-nav">
+                        <p>
+                            <a href="#order">Order Inquiry</a>
+                        </p>
+                    </div>
+                    <div class="col-6 d-sm-none center-div-btn mob-sticky-nav">
+                        <span>
+                            <a href="https://wa.me/919663977627">Whatsapp Us!</a>
+                            <img id="whatsapp" src="./assets/images/whatsapp.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!--main shop section-->
+    <main id="shop" class="container-fluid">
+        <div class="row">
+            <section class="col-12">
+
+                <!--shop section tag-->
+                <div class="row">
+                    <div class="col-12 center-div-btn">
+                        <img id="shop-tag" class="hvr-grow" src="./assets/images/shop.png" alt="shop-tag">
+                    </div>
+
+                    <!--varsity jacket section-->
+                    <div class="col-12 col-sm-6">
+                        <!-- <a href="./assets/others/varieties.html"> -->
+                            <img id="varsity" data-aos="fade-right" src="./assets/images/varsity.png"
+                                alt="varsity-jacket" />
+                        <!-- </a> -->
+                    </div>
+
+                    <!--text column for varsity-->
+                    <div class="col-12 col-sm-6">
+                        <div id="varsity-text-div" data-aos="fade-left" class="row yellow-div">
+                            <div class="tag-line col-12">
+                                <p id="varsity-tagline" class="tag-line">WHY SETTLE FOR <span class="wiggle">
+                                        ORDINARY,</span>
+                                    WHEN YOU'RE BORN TO <span class="wiggle"> STAND OUT!</span></p>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-delay="300" class="col-12 center-div-btn">
+                                <p id="varsity-text" class="text-content">Super Trendy <span class="wiggle"> Varsity
+                                        Jackets</span> are
+                                    adorned with a prominent and proud letter on the chest,
+                                    with beautiful contrast on sleeves drawing utmost attention!</br> </br>
+                                    Premium material that helps you maintain your body temperature during the day
+                                    and keeps you cosy at night! </br>
+                                    #squadgoals #trendsetter </p>
+                                <!-- <div class="row">
+                                    <div class="col-sm-12 text-center"> -->
+                                        <button class="hvr-grow hvr-sweep-to-right button" type="button" type="button"
+                                            onclick="window.location.href = '#order';">ORDER NOW</button>
+                                        <!-- <button class="hvr-grow hvr-sweep-to-right button" id="moreColors" type="button"
+                                            type="button"
+                                            onclick="window.location.href = './assets/others/varieties.html';">Check
+                                            Colors</button> -->
+                                    <!-- </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--all products section-->
+            <section class="grid-container col-12">
+
+                <!--tees section-->
+                <div class="item1">
+                    <div id="tshirt-text-div" data-aos="fade-right" class="row yellow-div">
+                        <div class="col-12">
+                            <p class="tag-line">CREATE <span class="wiggle">TEES</span> </br>
+                                THAT GO WITH</br>
+                                YOUR <span class="wiggle"> PERSONALITEES!</span></p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="300" class="col-12 center-div-btn">
+                            <p id="tshirt-text" class="text-content">These premium soft round neck tees
+                                are made of Egyptian Cotton
+                                and are just the right blend for a quality print!</p>
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <button class="button hvr-grow hvr-sweep-to-right" type="button" type="button"
+                                        onclick="window.location.href = './assets/js/main.js';">ORDER NOW</button>
+                                    <button class="hvr-grow hvr-sweep-to-right button" id="moreColors" type="button"
+                                        type="button"
+                                        onclick="window.location.href = './assets/others/varieties.html';">Check
+                                        Colors</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item2 hvr-grow-shadow">
+                    <a href="./assets/others/varieties.html">
+                        <img class="" id="tshirt" data-aos="fade-left" src="./assets/images/tshirt.png" alt="tshirt" />
+                    </a>
+                </div>
+
+                <!--hoodie section-->
+                <div class="item3">
+                    <img id="hoodie" data-aos="fade-right" src="./assets/images/hoodie.png" alt="hoodie" />
+                </div>
+                <div class="item4">
+                    <div id="hoodie-text-div" data-aos="fade-left" class="row yellow-div">
+                        <div class="col-12">
+                            <p class="tag-line">THE <span class="wiggle">HOODIE</span> </br>
+                                THAT EVERYONE WANTS </br>
+                                TO WEAR!</p>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-delay="300" class="col-12 center-div-btn">
+                            <p id="hoodie-text" class="text-content">Premium Hoodie Enclosed with metallic zipper.
+                                Deep Pockets, Hood with drawstrings makes it a great option for everyone!</p>
+                            <button class="button hvr-grow hvr-sweep-to-right" type="button" type="button"
+                                onclick="window.location.href = '#order';">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--highneck jacket section-->
+                <div class="item5">
+                    <div id="highneck-text-div" data-aos="fade-right" class="row yellow-div">
+                        <div class="col-12">
+                            <p class="tag-line">GET SPORTY</br>
+                                WITH HIGH-NECK </br>
+                                <span class="wiggle">JACKETS!</span> </p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">Premium High Neck Jackets are
+                                enclosed with a metallic zipper and deep pockets which made with perfection.</p>
+                            <button class="button hvr-grow hvr-sweep-to-right" type="button" type="button"
+                                onclick="window.location.href = '#order';">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item6">
+                    <img id="highneck" data-aos="fade-left" src="./assets/images/highneck.png" alt="highneck-jacket" />
+                </div>
+
+                <!--classic hoodie section-->
+                <div class="item7">
+                    <img id="classic" src="./assets/images/classic_hoodie.jpg" alt="" data-aos="fade-right">
+                </div>
+                <div class="item8">
+                    <div id="classic-text-div" data-aos="fade-right" class="row yellow-div">
+                        <div class="col-12">
+                            <p class="tag-line">SUPER CLASSIC HOODIES!</p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">Premium Hoodie with deep kangaroo pockets,
+                                hood and drawstrings will never go out of it's classic style!</p>
+                            <button class="button hvr-grow hvr-sweep-to-right" type="button" type="button"
+                                onclick="window.location.href = '#order';">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--polo tshirt section-->
+                <div class="item9">
+                    <div id="polo-text-div" data-aos="fade-right" class="row yellow-div">
+                        <div class="col-12">
+                            <p class="tag-line">POLO TEES FOR CORPORATE NEEDS!</p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">Pump up the game of dressing smart with classic polo tees,
+                                with a wide range of colours for you to choose from.</p>
+                            <button class="button hvr-grow hvr-sweep-to-right" type="button" type="button"
+                                onclick="window.location.href = '#order';">ORDER NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item10">
+                    <img id="polo" src="./assets/images/polo.png" alt="" data-aos="fade-left">
+                </div>
+            </section>
+
+            <!--other products section-->
+            <section class="col-12" id="others-div">
+
+                <!--other products tag-->
+                <div class="center-div center-div-btn hvr-grow">
+                    <img id="op" src="./assets/images/op.png" alt="">
+                </div>
+
+                <!--list of all other products-->
+                <div class="op-div row">
+                    <div class="col-1"></div>
+                    <div id="op1" class="col-3 hvr-grow">
+                        <img src="./assets/images/bottle.png " alt="">
+                    </div>
+                    <div id="op2" class="yellow-div col-7">
+                        <div class="col-12">
+                            <p class="tag-line">
+                                BOTTLES
+                            </p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">
+                                Choose from a wide range of products and get your design
+                                printed on your favourite bottles! From sippers to flasks
+                                we have it all!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-1"></div>
+                    <div id="op3" class="yellow-div col-7">
+                        <div class="col-12">
+                            <p class="tag-line">
+                                CAPS
+                            </p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">
+                                Make the statement with Rare Monk’s custom caps.
+                                Build your brand identity through our custom embroidered caps
+                                which not only look stylish but also worth the money!
+                            </p>
+                        </div>
+                    </div>
+                    <div id="op4" class="col-3 hvr-grow">
+                        <img src="./assets/images/cap.png" alt="">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-1"></div>
+                    <div id="op5" class="col-3 hvr-grow">
+                        <img src="./assets/images/keyring.png" alt="">
+                    </div>
+                    <div id="op6" class="yellow-div col-7">
+                        <div class="col-12">
+                            <p class="tag-line">
+                                KEYCHAINS
+                            </p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">
+                                Rare Monk provides options to print
+                                keychains for your college events and office branding.
+                                From silicone keychains to metal keychains we have it all!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-1"></div>
+                    <div id="op7" class="yellow-div col-7">
+                        <div class="col-12">
+                            <p class="tag-line">
+                                WATCHES
+                            </p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">
+                                Gift your beloved employees and guests watches
+                                from RareMonk and create your brand identity. Choose from wide
+                                range of products to gift your employees the perfect watch branded
+                                with your logo!
+                            </p>
+                        </div>
+                    </div>
+                    <div id="op8" class="col-3 hvr-grow">
+                        <img src="./assets/images/watch.png" alt="">
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-1"></div>
+                    <div id="op9" class="col-3 hvr-grow">
+                        <img src="./assets/images/mug.png" alt="">
+                    </div>
+                    <div id="op10" class="yellow-div col-7">
+                        <div class="col-12">
+                            <p class="tag-line">
+                                MUGS
+                            </p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">
+                                Get your custom design printed on our classic mugs.
+                                Choose from a wide range of products and get your customised mug.
+                                From quotes to logos to photos customise anything!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-1"></div>
+                    <div id="op11" class="yellow-div col-7">
+                        <div class="col-12">
+                            <p class="tag-line">
+                                JEANS
+                            </p>
+                        </div>
+                        <div class="col-12 center-div-btn">
+                            <p class="text-content">
+                                Tailor-made for all corporate needs, Rare Monk makes
+                                jeans that are not only trendy but comfortable. Our jeans come at
+                                affordable prices and a quality that’s meant to last!
+                            </p>
+                        </div>
+                    </div>
+                    <div id="op12" class="col-3 hvr-grow">
+                        <img src="./assets/images/jeans.png" alt="">
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </section>
+
+            <!--USP Section-->
+            <section class="col-12">
+                <div class="row">
+
+                    <!--usp tag-->
+                    <div class="col-12 center-div center-div-btn">
+                        <img id="why-us" class="hvr-grow" src="./assets/images/usp.png" alt="usp-tag" />
+                    </div>
+
+                    <!--price usp-->
+                    <div class="center-div col-12 col-sm-4">
+                        <div class="row">
+                            <div data-aos="zoom-in" class="col-4 col-sm-12">
+                                <img class="usp hvr-grow" src="./assets/images/price.png" alt="price-logo" />
+                            </div>
+                            <div class="usp-div col-8 col-sm-12">
+                                <p class="usp-tag hvr-grow">VALUE</p>
+                                <p class="usp-text hvr-grow">It's totally worth the buy!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customise usp-->
+                    <div class="center-div col-12 col-sm-4">
+                        <div class="row">
+                            <div data-aos="zoom-in" class="col-4 col-sm-12">
+                                <img class="usp hvr-grow" src="./assets/images/customise.png" alt="customise-logo" />
+                            </div>
+                            <div class="usp-div col-8 col-sm-12">
+                                <p class="usp-tag hvr-grow">CUSTOMISE</p>
+                                <p class="usp-text hvr-grow">You can customise it the way you want!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--quality usp-->
+                    <div class="center-div col-12 col-sm-4">
+                        <div class="row">
+                            <div data-aos="zoom-in" class="col-4 col-sm-12">
+                                <img class="usp hvr-grow" src="./assets/images/quality.png" alt="quality-logo" />
+                            </div>
+                            <div class="usp-div col-8 col-sm-12">
+                                <p class="usp-tag hvr-grow">QUALITY</p>
+                                <p class="usp-text hvr-grow">From the finest sources from all over!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Our Speciality-->
+            <section class="col-12">
+                <div class="row justify-content-center">
+
+                    <!--speciality tag-->
+                    <div class="col-12 center-div center-div-btn">
+                        <img id="speciality" src="./assets/images/speciality.png" alt="">
+                    </div>
+
+                    <!--print description-->
+                    <div class="center-div col-12 col-sm-5">
+                        <div class="row">
+                            <div data-aos="zoom-in" class="col-4 col-sm-12">
+                                <img class="usp hvr-grow" src="./assets/images/print.png" alt="customise-logo" />
+                            </div>
+                            <div class="usp-div col-8 col-sm-12">
+                                <p class="usp-tag hvr-grow">PRINTING</p>
+                                <p class="usp-text hvr-grow">Screen,
+                                    Digital,
+                                    Sublimation and
+                                    Glow in the dark printing!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--embroidery description-->
+                    <div class="center-div col-12 col-sm-5">
+                        <div class="row">
+                            <div data-aos="zoom-in" class="col-4 col-sm-12">
+                                <img class="usp hvr-grow" src="./assets/images/embroidery.png" alt="customise-logo" />
+                            </div>
+                            <div class="usp-div col-8 col-sm-12">
+                                <p class="usp-tag hvr-grow">EMBROIDERY</p>
+                                <p class="usp-text hvr-grow">Machine embroidery!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--review section-->
+            <!--all the reviews are written first, then image of the reviewer, then name and address-->
+            <section class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div data-aos="fade-right" id="review-div" class="row">
+
+                            <!--review tag-->
+                            <div class="col-12 center-div center-div-btn">
+                                <img id="rev-tag" class="hvr-grow" src="./assets/images/review.png" alt="review-tag">
+                            </div>
+                            <div class="col-12 yellow-div slideshow-container">
+                                <div class="mySlides">
+                                    <p id="review-text">The unique and affordable designs of Rare Monk have always
+                                        impressed me and prompted me to be their loyal customer.
+                                        It's been more than 6 months since I've been using their apparels for self use,
+                                        gifting etc. and there hasn't been even a single occasion when they disappointed
+                                        me.
+                                        Be it the excellent quality or on time delivery, Rare Monk knows how to keep
+                                        their customers delighted! Keep up the good work!
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-2 rev-img-div">
+                                            <img class="rev-img" src="./assets/images/rev_1.jpeg" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p id="name">- Alok Singh Yadav</p>
+                                            <p id="address">IIM-B Secretary - MaSH</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mySlides">
+                                    <p id="review-text">Rare Monk provides printed T-Shirts and Hoodies of superior
+                                        quality in terms of the print and material. They also guide you in improving and
+                                        finalising the design.
+                                        The thing I liked the most is that they are very patient in the whole process
+                                        from designing to printing and give their best so that you get the product which
+                                        best fits your
+                                        expecations.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-2 rev-img-div">
+                                            <img class="rev-img" src="./assets/images/rev_2.jpeg" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p id="name">- Shobhit Khandelwal</p>
+                                            <p id="address">IIM Bangalore</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mySlides">
+                                    <p id="review-text">
+                                        The excellent quality and affordability are the plus points of the Rare Monk
+                                        products. I have been their customers for almost 4 months now and Rare Monk has
+                                        not given me a single chance of complaint.
+                                        The customisation of the products are top notch. Rare Monk has not given a
+                                        single chance of complaint. The customisation of the products are top notch.
+                                        Rare Monk knows how to keep their customers happy!
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-2 rev-img-div">
+                                            <img class="rev-img" src="./assets/images/rev_3.jpeg" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p id="name">- Raghavendra</p>
+                                            <p id="address">Continental</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mySlides">
+                                    <p id="review-text">I worked with Rare Monk as merchandising partner for Eximius
+                                        2019 (IIM Bangalore Annual Entrepreneur Summit). Even though the order size was
+                                        significantly large, the team
+                                        gave enough amount of detailing to the quality and packaging of every T-Shirt
+                                        and Hoodies!!
+                                        Really happy with all the support from Shivani. Highly recommend them to every
+                                        college fest organising committee who want a hustle free and quality-driven
+                                        work!!
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-2 rev-img-div">
+                                            <img src="./assets/images/rev_4.jpeg" alt="" class="rev-img">
+                                        </div>
+                                        <div class="col-8">
+                                            <p id="name">- Ankit</p>
+                                            <p id="address">IIM-B Secretary - EXIMIUS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mySlides">
+                                    <p id="review-text">We got our dorm T-Shirts done through Rare Monk. Even through
+                                        the order size was quite small, the production and shipping time was great. I
+                                        had several questions and they
+                                        were answered quickly and efficiently. The T-Shirt and print quality was top
+                                        notch. All this at very affordable price! Would highly recommend them to anyone
+                                        looking for custom tees.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-2 rev-img-div">
+                                            <img src="./assets/images/rev_5.jpeg" alt="" class="rev-img">
+                                        </div>
+                                        <div class="col-8">
+                                            <p id="name">- Mahendra</p>
+                                            <p id="address">IIM Ahmedabad</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--next and previous selection arrow-->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+
+                            <!--dots at the bottom to select a particular review slider-->
+                            <div class="dot-div col-12 center-div center-div-btn">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--clients moving marquee-->
+            <section class="col-12">
+                <div class="row">
+                    <div class="marquee col-12">
+
+                        <!--list of client logos-->
+                        <ul class="marquee-content">
+                            <li><img src="./assets/images/c1.png" alt="" class="hvr-grow cl c1"></li>
+                            <li><img src="./assets/images/c2.png" alt="" class="hvr-grow cl c2"></li>
+                            <li><img src="./assets/images/c3.png" alt="" class="hvr-grow cl c3"></li>
+                            <li><img src="./assets/images/c4.jpeg" alt="" class="hvr-grow cl c4"></li>
+                            <li><img src="./assets/images/c5.jpeg" alt="" class="hvr-grow cl c5"></li>
+                            <li><img src="./assets/images/c6.jpeg" alt="" class="hvr-grow cl c6"></li>
+                            <li><img src="./assets/images/c7.jpg" alt="" class="hvr-grow cl c7"></li>
+                            <li><img src="./assets/images/c8.png" alt="" class="hvr-grow cl c8"></li>
+                            <li><img src="./assets/images/c9.jpeg" alt="" class="hvr-grow cl c9"></li>
+                            <li><img src="./assets/images/c10.png" alt="" class="hvr-grow cl c10"></li>
+                            <li><img src="./assets/images/c11.jpeg" alt="" class="hvr-grow cl c11"></li>
+                            <li><img src="./assets/images/c12.jpeg" alt="" class="hvr-grow cl c12"></li>
+                            <li><img src="./assets/images/c13.png" alt="" class="hvr-grow cl c13"></li>
+                            <li><img src="./assets/images/c14.png" alt="" class="hvr-grow cl c14"></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--order form-->
+            <section class="col-12">
+                <div class="row">
+                    <!--order tag-->
+                    <div data-aos="zoom-in" class="center-div center-div-btn col-12">
+                        <img id="order" class="hvr-grow" src="./assets/images/order.png" alt="order-now-tag" />
+                    </div>
+                    <div data-aos="zoom-in" class="col-12">
+                        <div>
+                            <form class="yellow-div form-div" action="https://airform.io/your@email.com" method="post"
+                                target="_blank" autocomplete="on">
+                                <p>Hi, my name is <input id="first" class="input" type="text" placeholder="John Doe"
+                                        name="name" required>.</p>
+                                <p>And I'm looking for customised
+                                    <select class="input" required>
+                                        <option value="">Varsity Jacket</option>
+                                        <option value="">T-Shirt</option>
+                                        <option value="">Hoodie</option>
+                                        <option value="">Highneck Jacket</option>
+                                        <option value="">Caps</option>
+                                        <option value="">Bottle</option>
+                                        <option value="">Mugs</option>
+                                        <option value="">Pens</option>
+                                        <option value="">Notepad</option>
+                                        <option value="">Keychain</option>
+                                    </select>.</p>
+                                <p>My budget is around <input type="range" min="200" max="500" value="50" class="slider"
+                                        id="myRange"> Rs <span id="demo"></span> per product!</p>
+                                <p>Please contact me at <input class="input" type="tel" name="phone" required
+                                        placeholder="+91-9...">.</p>
+                                <p>Thank You!<input id="last" class="hvr-sweep-to-right hvr-grow" type="submit"
+                                        value="Submit"> </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--instagram section-->
+            <section class="col-12">
+                <div class="row">
+                    <div class="col-12 gram-div">
+
+                        <!--instagram tag-->
+                        <div class="col-12 center-div center-div-btn">
+                            <img id="gram" class="hvr-grow" src="./assets/images/gram.png" alt="ig-tag">
+                        </div>
+
+                        <!--instagram pics-->
+                        <div class="row container-fluid ig-div">
+                            <a href="https://www.instagram.com/p/B84AiiPgnOL/" target="_blank">
+                                <img class="ig ig1 hvr-grow-shadow" src="./assets/images/1.jpg" alt="ig-1">
+                            </a>
+                            <a href="https://www.instagram.com/p/B-HV17tAuws/" target="_blank">
+                                <img class="ig ig2 hvr-grow-shadow" src="./assets/images/2.jpg" alt="ig-2">
+                            </a>
+                            <a href="https://www.instagram.com/p/B-KamhkAdfy/" target="_blank">
+                                <img class="ig ig3 hvr-grow-shadow" src="./assets/images/3.jpg" alt="ig-3">
+                            </a>
+                            <a href="https://www.instagram.com/p/B-NCVtDguw0/" target="_blank">
+                                <img class="ig ig4 hvr-grow-shadow" src="./assets/images/4.jpg" alt="ig-4">
+                            </a>
+                            <a href="https://www.instagram.com/p/B-NCVtDguw0/" target="_blank">
+                                <img class="ig ig5 hvr-grow-shadow" src="./assets/images/5.jpg" alt="ig-4">
+                            </a>
+                            <a href="https://www.instagram.com/p/B-NCVtDguw0/" target="_blank">
+                                <img class="ig ig6 hvr-grow-shadow" src="./assets/images/6.jpg" alt="ig-4">
+                            </a>
+                            <a href="https://www.instagram.com/p/B-NCVtDguw0/" target="_blank">
+                                <img class="ig ig7 hvr-grow-shadow" src="./assets/images/7.jpg" alt="ig-4">
+                            </a>
+                            <a href="https://www.instagram.com/p/B-NCVtDguw0/" target="_blank">
+                                <img class="ig ig8 hvr-grow-shadow" src="./assets/images/8.jpg" alt="ig-4">
+                            </a>
+                        </div>
+
+                        <!--raremonk instagram logo-->
+                        <div class="col-12" id="gram-logo-div">
+                            <img id="gram-logo" src="./assets/images/ig-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!--footer section-->
+    <footer class="yellow-div container-fluid">
+        <div class="row ">
+            <div class="col-12 col-sm-2">
+
+                <!--navigation links-->
+                <nav id="footer-nav" class="nav flex-sm-column">
+                    <a class="nav-link hvr-underline-from-left" href="#first-page">HOME</a>
+                    <a class="nav-link hvr-underline-from-left" href="#shop-tag">SHOP</a>
+                    <a class="nav-link hvr-underline-from-left" href="#order">ORDER NOW</a>
+                    <a class="nav-link hvr-underline-from-left" tabindex="0" data-toggle="popover"
+                        data-trigger="hover focus" title="All Products" data-placement="top">BROWSE</a>
+                </nav>
+            </div>
+
+            <!--this is to add space between links and logo-->
+            <div class="col-sm-4">
+            </div>
+
+            <!--raremonk logo and social media links-->
+            <div class="col-12 col-sm-6">
+                <div class="row">
+                    <div class="col-12">
+                        <img id="logo-footer" class="wiggle" src="./assets/images/raremonk_name.png" alt="logo">
+                    </div>
+                    <div class="col-12 social-footer-div">
+                        <a href="#"><img class="social-footer hvr-grow" src="./assets/images/facebook.svg"
+                                alt="facebook-icon" /></a>
+                        <a href="#"><img class="social-footer hvr-grow" src="./assets/images/instagram.svg"
+                                alt="instagram-icon" /></a>
+                        <a href="#"><img class="social-footer hvr-grow" src="./assets/images/twitter.svg"
+                                alt="twitter-icon" /></a>
+                        <a href="#"><img class="social-footer hvr-grow" src="./assets/images/linkedin.svg"
+                                alt="linkedin-icon" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="seo-content">
+        <h4 class="center-div-btn">
+            Why Rare Monk
+        </h4>
+        <p>
+            Rare Monk is one stop solution for all your custom requirements. We strongly believe
+            in quality printing techniques that are eye catching and classy. Our main focus lies on
+            custom t-shirt printing with cutting-edge printing techniques that you can rely on, for
+            ars at a stretch. We expertise in digital printing, screen printing, sublimation and even
+            quirky glow-in-the-dark ones. Apart from this, we also take great pride in adorning our apparel
+            clothing line with personalised embroidery and custom logos on them. We make possibilities
+            endless by bringing your ideas and designs to life. We cater custom printing services in
+            Bengaluru for over 5 years now.
+        </p>
+        <p>
+            Not only do we make sure that the printing quality is flawless but we are also very particular
+            about our customer’s choice in the clothing material, it's texture, fabric breathability
+            and longevity to suit the customers needs. Be it the jerseys for your football team or the
+            trekking expedition that you've been planning for, we've got it all sorted out for you. You
+            just need to choose from our wide range of products like t-shirts, polo t-shirts, varsity
+            jackets, classic hoodies, zipper hoodies, jeans, denims and many more! Aside from the clothing
+            section, we also offer custom printing on several other accessories like watches, keychains,
+            mugs and bottles, journals and diaries.
+        </p>
+        <h4 class="center-div-btn">
+            What’s so ‘Rare’
+        </h4>
+        <p>
+            One of Rare Monk's core beliefs is in having a one-on-one interaction with our
+            customers to facilitate our priority on the minute details in the orders so that
+            we can guarantee to match the requirements with our impeccable merchandise quality
+            and on-time product delivery to ensure the utmost satisfaction in our service.
+            We believe that through the medium of a conversation, we can also assist our
+            customers better by keeping them abreast of their options within their budget
+            and demand bracket. We make sure that shopping at Rare Monk is all about you
+            feeling comfortable in your skin!
+        </p>
+        <p>
+            In today's world, where one dreams of the comfort in branded clothes, the
+            affordability from the grassroot level of the multi-hierarchical industry,
+            and still add a personalised touch to it, we are promising all of that under
+            one roof! The Rare Monk is therefore, the one stop shop dedicated to giving you
+            a classy look clubbed with a fashion statement that's still entirely yours to make.
+        </p>
+        <h4 class="center-div-btn">
+            About Us
+        </h4>
+        <p>
+            Rare Monk specialises in meeting your specific needs amidst a rising demand
+            in custom apparels. We have had a vast experience of catering to customers
+            over the past 5 years in bulk orders as well as small, around corporate companies,
+            social sectors, colleges, startups.
+        </p>
+        <p>
+            Student clubs and organisations from India's top-notch colleges like IIM Ahmedabad,
+            IIM Bangalore, NITK Surathkal and corporate giants like Oska and other companies
+            have been impressed by our merchandise quality and our efficiency in bulk delivery
+            and continue to be so, as we keep making our mark and strengthening our position in
+            the booming industry.
+        </p>
+
+        <h4 class="center-div-btn">
+            RARE MONK
+        </h4>
+        <p>
+            “You wear who you are”
+        </p>
+        <p>
+            “The Rare Monk understands you, so that you don’t have to invest in understanding us.
+            Whether it be fabric worries, shade confusion, fineness of embroidery or the print
+            quality hassles, the Rare Monk has your back.”
+        </p>
+        <h4 class="center-div-btn">
+            SHOP
+        </h4>
+        <p>
+            “When you have the style, why walk the extra mile?”
+            From the choice of your fingertips to the voice at your doorstep: the Rare Monk
+            makes it all happen!
+        </p>
+        <p>
+            Rare Monk’s checklist for you:
+        </p>
+        <ul>
+            <li>
+                Satisfaction in a one-on-one order placement.
+            </li>
+            <li>
+                A plethora of choices to suit your style.
+            </li>
+            <li>
+                Easy implementation of your design/logo.
+            </li>
+            <li>
+                Minimum effort meets maximum comfort.
+            </li>
+            <li>
+                Assuredly, the best deals on the internet in terms of price, quality and super fast delivery.
+            </li>
+        </ul>
+
+        <p>
+            Bottles: From the design of the bottle to the design on the bottle, let’s make your
+            sip worth a thousand words!
+        </p>
+        <p>
+            Caps: Whether it be just to beat the sun or to spread your dance crews vibe,
+            make your statement bolder with Rare Monk’s custom caps. Build your brand identity
+            through our embroidered headgears and stand out of the crowd!
+        </p>
+        <p>
+            Keychains: Rare Monk provides options to print keychains for your college events
+            and office branding. From silicone keychains to remind you of your favourite
+            superhero to metal keychains as a sentimental token, we have it all!
+        </p>
+        <p>
+            Watches: Gift your prized employees or your well-wishers a watch as a token of their
+            deserving. Choose from a wide range of dial designs and strap textures to personalise
+            the perfect watch branded with your own logo!
+        </p>
+        <p>
+            Mugs: Whether it is a reminder of your family atop your office desk or the golden
+            memories of past years, get your custom design printed on our classic mugs. From
+            quotes to photos, choose how you want to link your nostalgia with routine!
+        </p>
+        <p>
+            Jeans: The Rare Monk features tailor-made jeans to blend the trends or even bend
+            them into your comfort zone. Our jeans come at affordable prices and qualities
+            that never fail to impress!
+        </p>
+        <p>
+            Wrist Band : Wear your strength on your wrist always, get your quote, design
+            printed on our wrist bands.
+        </p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
