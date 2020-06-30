@@ -231,13 +231,13 @@ span {
   }
 
   .logo {
-    width: 50%;
+    width: 100%;
     height: 150%;
   }
 
   #brand {
     position: relative;
-    top: -90px;
+    top: -70px;
   }
 
   .tag-line {
@@ -1034,13 +1034,13 @@ span {
   }
 
   #varsity {
-    max-width: 90%;
+    width: 70%;
     height: auto;
-    margin-left: 20%;
+    margin: 0 0 5% 26%;
   }
 
   #varsity-text-div {
-    margin-top: 15%;
+    margin-top: 0;
     width: 75%;
   }
 
@@ -1056,25 +1056,25 @@ span {
   #tshirt {
     width: 70%;
     height: auto;
-    margin-top: 10%;
+    margin-top: -5%;
   }
 
   #hoodie {
     width: 70%;
     height: auto;
-    margin: 0 0 5% 25%;
+    margin: 10% 0 5% 25%;
   }
 
   #hoodie-text-div {
     width: 70%;
     margin: 5% 0 0 0%;
     position: relative;
-    top: -25%;
+    top: -45%;
   }
 
   #highneck-text-div {
     width: 70%;
-    margin: 0 0 0 25%;
+    margin: 10% 0 0 25%;
   }
 
   #highneck {
@@ -1089,28 +1089,28 @@ span {
     height: auto;
     margin: 0 0 5% 25%;
     position: relative;
-    top: -35%;
+    top: -15%;
   }
 
   #classic-text-div {
     width: 70%;
     margin: 5% 0 0 0%;
     position: relative;
-    top: -15%;
+    top: -5%;
   }
 
   #polo-text-div {
     width: 70%;
     margin: 0 0 0 25%;
     position: relative;
-    top: -35%;
+    top: -5%;
   }
 
   #polo {
     width: 70%;
     height: auto;
     position: relative;
-    top: -50%;
+    top: -30%;
   }
 
   #others-div {
@@ -1602,6 +1602,7 @@ span {
   #seo-content ul {
     margin: 2% 5% 2% 5%;
   }
+  
 }
 
 .teeColors {
@@ -1650,4 +1651,44 @@ span {
 
 .btn-group button:not(:last-child) {
   border-bottom: none;
+}
+
+.footer-shirts {
+  bottom: 0;
+  flex-shrink: 0;
+}
+
+.text-color-buttons{
+  padding: 10px;
+  font-size: 16px;
+}
+
+.tag-line-choose {
+  text-align: left;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 100%;
+  margin-bottom: 5%;
+  font-size: 3vw;
+  text-align: center;
+  width: 100%;
+}
+
+.top-div {
+  padding-top: 75px; 
+}
+
+.logo-tshirts {
+  width: 30% !important;
+  height: 75% !important;
+}
+
+.main-header {
+  height: 75px;
+  width: 102%;
+}
+
+.nav {
+  margin: 0 0 0 0 !important;
 }
