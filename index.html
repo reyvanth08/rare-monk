@@ -32,6 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
         integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 
@@ -65,19 +66,24 @@
                         </a>
                     </div>
 
+
+
                     <!--main navigation links-->
                     <div class="d-none d-sm-inline col-sm-6">
                         <nav class="nav justify-content-end">
                             <a class="nav-link hvr-underline-from-left" href="#">HOME</a>
                             <a class="nav-link hvr-underline-from-left" href="#shop-tag">SHOP</a>
                             <a class="nav-link hvr-underline-from-left" href="#order">ORDER NOW</a>
-                            <a class="nav-link hvr-underline-from-left" tabindex="0" data-toggle="popover"
-                                data-trigger="hover focus" title="All Products" data-placement="bottom">BROWSE</a>
+                            <a class="nav-link hvr-underline-from-left dropdown-toggle" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">DOWNLOADS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/assets/docs/Raremonk-Catalogue.pdf"
+                                    download>CATALOGUE</a>
+                            </div>
                         </nav>
                     </div>
-
                     <!--popover that appears when you hover on browse-->
-                    <div class="browse d-none">
+                    <!-- <div class="browse d-none">
                         <ul class="browse-main">
                             <li><a href="#varsity" class="text-dark">Varsity Jacket</a></li>
                             <li><a href="#tshirt" class="text-dark">Tees</a></li>
@@ -92,7 +98,7 @@
                             <li><a href="#mug" class="text-dark">Mugs</a></li>
                             <li><a href="#jeans" class="text-dark">Jeans</a> </li>
                         </ul>
-                    </div>
+                    </div> -->
 
                     <!--hamburger menu icon in mobile sites-->
                     <div id="menu" class="col-1 ham d-sm-none" onclick="openNav()">&#9776;</div>
@@ -111,6 +117,11 @@
                         <a class="nav-link" onclick="closeNav()" href="#first-page">HOME</a>
                         <a class="nav-link" onclick="closeNav()" href="#shop-tag">SHOP</a>
                         <a class="nav-link" onclick="closeNav()" href="#order">ORDER NOW</a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">DOWNLOADS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item catalogue" href="/assets/docs/Raremonk-Catalogue.pdf" download>CATALOGUE</a>
+                        </div>
                     </div>
                 </nav>
             </header>
@@ -726,7 +737,8 @@
                                         name="name" required>.</p>
                                 <p>And I'm looking for customised
                                     <select class="input" required>
-                                        <option value="" disabled selected placeholder="select style">Select style</option>
+                                        <option value="" disabled selected placeholder="select style">Select style
+                                        </option>
                                         <option value="">Varsity Jacket</option>
                                         <option value="">T-Shirt</option>
                                         <option value="">Hoodie</option>
@@ -976,7 +988,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
@@ -985,6 +997,9 @@
         AOS.init();
     </script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>

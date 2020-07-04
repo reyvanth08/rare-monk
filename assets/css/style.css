@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
   cursor: default;
+  overflow-x: hidden;
 }
 
 /*loading screen animation*/
@@ -173,6 +174,14 @@ span {
     color: #ffcc00;
   }
 
+  a.catalogue:hover {
+    color: #ffcc00 !important;
+  }
+  
+  div.dropdown-menu.show {
+    background-color: #111 !important;
+  }
+
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
@@ -218,7 +227,7 @@ span {
   .logo-mob {
     width: 60%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 5%;
   }
 
@@ -237,7 +246,7 @@ span {
 
   #brand {
     position: relative;
-    top: -70px;
+    top: -120px;
   }
 
   .tag-line {
@@ -276,6 +285,22 @@ span {
     font-size: 3.5vw;
     box-shadow: 2.5px 5px 10px #555555;
     margin-bottom: 5%;
+  }
+  .btnColors {
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    box-shadow: 2.5px 5px 10px #555555;
+    margin-bottom: 2.5%;
+    border-radius: 50%;
+    margin-top: 25px;
+    min-width: 25px;
+    max-width: 50px;
+    min-height: 25px;
+    max-height: 50px;
+    display: inline-block;
+    outline: none;
+    margin: 10px 10px 10px 10px;
   }
 
   #brand-text {
@@ -970,6 +995,22 @@ span {
     margin-bottom: 10%;
     margin-top: 10%;
   }
+  .btnColors {
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    box-shadow: 2.5px 5px 10px #555555;
+    margin-bottom: 2.5%;
+    border-radius: 50%;
+    margin-top: 25px;
+    min-width: 25px;
+    max-width: 50px;
+    min-height: 25px;
+    max-height: 50px;
+    display: inline-block;
+    outline: none;
+    margin: 10px 10px 10px 10px;
+  }
 
   .center-div {
     text-align: center;
@@ -1602,7 +1643,6 @@ span {
   #seo-content ul {
     margin: 2% 5% 2% 5%;
   }
-  
 }
 
 .teeColors {
@@ -1627,16 +1667,18 @@ span {
   border-radius: 50%;
   margin-top: 25px;
   min-width: 50px;
-  max-width:100px;
+  max-width: 100px;
   min-height: 50px;
-  max-height:100px;
+  max-height: 100px;
   display: inline-block;
   outline: none;
   margin: 10px 10px 10px 10px;
 }
+
 .btnColorWhite {
   color: #000000;
 }
+
 .imageCol {
   margin-left: 50%;
   width: 400px;
@@ -1658,9 +1700,9 @@ span {
   flex-shrink: 0;
 }
 
-.text-color-buttons{
+.text-color-buttons {
   padding: 10px;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .tag-line-choose {
@@ -1676,7 +1718,7 @@ span {
 }
 
 .top-div {
-  padding-top: 75px; 
+  padding-top: 75px;
 }
 
 .logo-tshirts {
@@ -1691,4 +1733,17 @@ span {
 
 .nav {
   margin: 0 0 0 0 !important;
+}
+
+.brochure {
+  margin: 5% 0 10% 23%;
+}
+
+.brochure-text {
+  font-size: 1.35vw;
+  margin: 0 auto 0 auto;
+}
+
+.catalogue {
+  background-color: #111 !important;
 }
