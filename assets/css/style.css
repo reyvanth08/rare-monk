@@ -246,7 +246,7 @@ span {
 
   #brand {
     position: relative;
-    top: -120px;
+    top: -135px;
   }
 
   .tag-line {
@@ -1702,7 +1702,7 @@ span {
 
 .text-color-buttons {
   padding: 10px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .tag-line-choose {
