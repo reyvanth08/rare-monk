@@ -139,7 +139,13 @@ span {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
-
+span.size-chart {
+  font-weight: 100 !important;
+  font-size: 10px !important;
+  color: rgb(44, 137, 224);
+  text-decoration: underline;
+  cursor: pointer;
+}
 /*mobile css*/
 @media only screen and (max-width: 575px) {
   .sidenav {
@@ -177,7 +183,7 @@ span {
   a.catalogue:hover {
     color: #ffcc00 !important;
   }
-  
+
   div.dropdown-menu.show {
     background-color: #111 !important;
   }
@@ -286,21 +292,56 @@ span {
     box-shadow: 2.5px 5px 10px #555555;
     margin-bottom: 5%;
   }
-  .btnColors {
+  .btnColors,
+  .btnColorWhite {
     color: #ffffff;
     border: none;
     padding: 10px;
     box-shadow: 2.5px 5px 10px #555555;
-    margin-bottom: 2.5%;
+    margin-bottom: 5%;
     border-radius: 50%;
     margin-top: 25px;
-    min-width: 25px;
-    max-width: 50px;
-    min-height: 25px;
-    max-height: 50px;
+    min-width: 40px;
+    max-width: 75px;
+    min-height: 40px;
+    max-height: 75px;
     display: inline-block;
     outline: none;
     margin: 10px 10px 10px 10px;
+  }
+
+  .btnColorWhite {
+    color: #000000;
+  }
+
+  .tag-line-choose {
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 3% 0 3% 0;
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+  }
+  .clothing-adjust {
+    height: 500px;
+  }
+
+  button.btn.btn-outline-dark {
+    margin: 0 0 10% 5%;
+  }
+
+
+  .text-content-about {
+    margin: 0 0 0 5%;
+  } 
+  .text-content-title {
+    margin: 5% 0 2% 4.8%;
+  }
+
+  .text-color-availability {
+
   }
 
   #brand-text {
@@ -995,7 +1036,8 @@ span {
     margin-bottom: 10%;
     margin-top: 10%;
   }
-  .btnColors {
+  .btnColors,
+  .btnColorWhite {
     color: #ffffff;
     border: none;
     padding: 10px;
@@ -1003,17 +1045,50 @@ span {
     margin-bottom: 2.5%;
     border-radius: 50%;
     margin-top: 25px;
-    min-width: 25px;
-    max-width: 50px;
-    min-height: 25px;
-    max-height: 50px;
+    min-width: 50px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 100px;
     display: inline-block;
     outline: none;
-    margin: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 15px;
+  }
+  .tag-line-choose {
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    line-height: 100%;
+    margin-bottom: 3%;
+    /* margin-bottom: 5% 0 5% 0; */
+    font-size: 2vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  .clothing-adjust {
+    height: 500px;
+  }
+  button.btn.btn-outline-dark {
+    margin: 0 0 10% 2.5%;
+  }
+  .image-div {
+    margin-right: 10%;
+  }
+  
+  .text-content-title {
+    margin: 0 0 0 4.8%;
+  }
+  .text-content-about {
+    margin: 3% 0 1% 5% ;
   }
 
   .center-div {
     text-align: center;
+  }
+
+  span.size-chart {
+    font-weight: 100 !important;
+    font-size: 14px !important;
   }
 
   #brand-text {
@@ -1644,11 +1719,6 @@ span {
     margin: 2% 5% 2% 5%;
   }
 }
-
-.teeColors {
-  margin-left: 30px;
-  margin-top: 30px;
-}
 .yellow-div-varities {
   background-color: #ffcc00;
 }
@@ -1657,39 +1727,7 @@ span {
   margin: 5% 0 2% -2%;
   text-align: center;
 }
-.btnColors,
-.btnColorWhite {
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  box-shadow: 2.5px 5px 10px #555555;
-  margin-bottom: 5%;
-  border-radius: 50%;
-  margin-top: 25px;
-  min-width: 50px;
-  max-width: 100px;
-  min-height: 50px;
-  max-height: 100px;
-  display: inline-block;
-  outline: none;
-  margin: 10px 10px 10px 10px;
-}
 
-.btnColorWhite {
-  color: #000000;
-}
-
-.imageCol {
-  margin-left: 50%;
-  width: 400px;
-  height: 600px;
-}
-
-.btn-group {
-  padding: 10px 24px;
-  cursor: pointer;
-  display: block;
-}
 
 .btn-group button:not(:last-child) {
   border-bottom: none;
@@ -1702,19 +1740,7 @@ span {
 
 .text-color-buttons {
   padding: 10px;
-  font-size: 16px;
-}
-
-.tag-line-choose {
-  text-align: left;
-  color: #000000;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  line-height: 100%;
-  margin-bottom: 5%;
-  font-size: 3vw;
-  text-align: center;
-  width: 100%;
+  font-size: 24px;
 }
 
 .top-div {
@@ -1745,5 +1771,6 @@ span {
 }
 
 .catalogue {
-  background-color: #111 !important;
+  color: #111;
 }
+

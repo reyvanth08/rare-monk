@@ -61,8 +61,12 @@
                             <a class="nav-link hvr-underline-from-left" href="../../index.html#">HOME</a>
                             <a class="nav-link hvr-underline-from-left" href="../../index.html#shop-tag">SHOP</a>
                             <a class="nav-link hvr-underline-from-left" href="../../index.html#order">ORDER NOW</a>
-                            <a class="nav-link hvr-underline-from-left" tabindex="0" data-toggle="popover"
-                                data-trigger="hover focus" title="All Products" data-placement="bottom">BROWSE</a>
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">DOWNLOADS</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item catalogue" onclick="closeNav()"
+                                    href="../docs/Raremonk-Catalogue.pdf" download>CATALOGUE</a>
+                            </div>
                         </nav>
                     </div>
 
@@ -109,117 +113,131 @@
     <section id="shop" class="container-fluid top-div">
         <div class="row">
             <div class="col-12">
-                <div id="" data-aos="fade-right">
-                    <div class="col-12">
-                        <p class="tag-line-choose">CREATE TEES THAT GO WITH YOUR <br> <span
-                                class="text-center">PERSONALITEES!</span> </p>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-delay="300" class="col-12 center-div-btn">
-                        <p id="" class="text-content-buttons">These premium soft round neck tees
-                            are made of Egyptian Cotton
-                            and are just the right blend for a quality print!</p>
-                    </div>
+                <div data-aos="zoom-in">
+                    <p class="tag-line-choose">CREATE TEES THAT GO WITH YOUR <br> <span
+                            class="text-center">PERSONALITEES!</span> </p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <div class="row d-flex justify-content-center" data-aos="fade-right" data-aos-delay="300">
-                    <div class="">
-                        <img class="yellow-div-varities" id="myImage" src="../images/tshirt_maroon.png" height="500px">
+            <div class="col-sm-6">
+                <div class="row d-flex justify-content-end" data-aos="fade-right" data-aos-delay="300">
+                    <div class="image-div">
+                        <img class="yellow-div-varities clothing-adjust" id="myImage" src="../images/tshirt_maroon.png">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-
-                <div class="row d-flex justify-content-left text-center " data-aos="fade-left" data-aos-delay="300">
-                    <p class="text-color-buttons ">
-                        Check the colors available:
-                    </p>
+            <div class="col-sm-6">
+                <div class="row" data-aos="fade-left" data-aos-delay="300">
+                    <h5 class="text-content-title">PRODUCT DESCRIPTION: </h5>
+                    <div class="">
+                        <p id="" class="text-content-about">
+                            These premium soft round neck tees
+                            are made of Egyptian Cotton
+                            and are just the right blend for a quality print!
+                        </p>
+                    </div>
                 </div>
-                <div class="row d-flex justify-content-left" data-aos="fade-left" data-aos-delay="300">
+                <hr>
+                <div class="row d-flex justify-content-left" data-aos="fade-right" data-aos-delay="300">
+                    <h5 class="text-content-title">
+                        CHECK THE COLORS AVAILABLE:
+                    </h5>
+                </div>
+                <div class="row d-flex justify-content-left text-content-about"  data-aos="fade-right" data-aos-delay="300">
                     <button class="hvr-grow color-maroon btnColors" style="background-color: rgb(97, 0, 0);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_maroon.png'"></button>
                     <button class="hvr-grow color-maroon btnColors" style="background-color: rgb(0, 0, 0);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_black.png'"></button>
                     <button class="hvr-grow color-maroon btnColors" style="background-color:rgb(78, 78, 78)"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_darkgrey.png'"></button>
                     <button class="hvr-grow color-maroon btnColors" style="background-color: rgb(180, 180, 180);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_grey.png'"></button>
                     <button class="hvr-grow color-maroon btnColors" style="background-color: rgb(255, 22, 22);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_orange.png'"></button>
                 </div>
-                <div class="row d-flex justify-content-left" data-aos="fade-right" data-aos-delay="300">
+                <div class="row d-flex justify-content-left text-content-about" data-aos="fade-right" data-aos-delay="300">
                     <button class="hvr-grow color-maroon btnColors" style="background-color: rgb(148, 5, 5);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_red.png'"></button>
                     <button class="hvr-grow color-maroon btnColors" style="background-color: rgb(0, 0, 90);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_navyblue.png'"></button>
                     <button class="hvr-grow color-maroon btnColors" style="background-color: #ffcc00;" type="button"
-                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_yellow.png'"></button>
                     <button class="hvr-grow color-maroon btnColorWhite" style="background-color: rgb(255, 255, 255);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_white.png'"></button>
                     <button class="hvr-grow color-maroon btnColors" style="background-color: rgb(3, 149, 197);"
-                        type="button" type="button"
+                        type="button"
                         onclick="document.getElementById('myImage').src='../images/tshirt_lightblue.png'"></button>
                 </div>
-            </div>
-        </div>
-        <div>
-            <br>
-        </div>
-    </section>
-    <footer class="yellow-div container-fluid footer-shirts">
-        <div class="row ">
-            <div class="col-12 col-sm-2">
-
-                <!--navigation links-->
-                <nav id="footer-nav" class="nav flex-sm-column">
-                    <a class="nav-link hvr-underline-from-left" href="../../index.html#">HOME</a>
-                    <a class="nav-link hvr-underline-from-left" href="../../index.html#shop-tag">SHOP</a>
-                    <a class="nav-link hvr-underline-from-left" href="../../index.html#order">ORDER NOW</a>
-                    <a class="nav-link hvr-underline-from-left" tabindex="0" data-toggle="popover"
-                        data-trigger="hover focus" title="All Products" data-placement="top">BROWSE</a>
-                </nav>
-            </div>
-
-            <!--this is to add space between links and logo-->
-            <div class="col-sm-4">
-            </div>
-
-            <!--raremonk logo and social media links-->
-            <div class="col-12 col-sm-6">
-                <div class="row">
-                    <div class="col-12">
-                        <img id="logo-footer" class="wiggle" src="../images/raremonk_name.png" alt="logo">
-                    </div>
-                    <div class="col-12 social-footer-div">
-                        <a href="#"><img class="social-footer hvr-grow" src="../images/facebook.svg"
-                                alt="facebook-icon" /></a>
-                        <a href="#"><img class="social-footer hvr-grow" src="../images/instagram.svg"
-                                alt="instagram-icon" /></a>
-                        <a href="#"><img class="social-footer hvr-grow" src="../images/twitter.svg"
-                                alt="twitter-icon" /></a>
-                        <a href="#"><img class="social-footer hvr-grow" src="../images/linkedin.svg"
-                                alt="linkedin-icon" /></a>
+                <hr>
+                <div class="row d-flex justify-content-left" data-aos="fade-left" data-aos-delay="300">
+                    <div class="text-content-title">
+                        <h5>
+                            SIZES:
+                            <span class="size-chart" style="position:absolute; right:10px;">
+                                <a data-toggle="modal" data-target="#exampleModalCenter">Size Chart</a>
+                            </span>
+                        </h5>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Size Chart</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../images/size-chart.png" alt="Size Chart" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="text-content-about btn-sizes" data-aos="fade-left" data-aos-delay="300"> 
+                    <button type="button " class="btn btn-outline-dark"> S - Small </button>
+                    <button type="button " class="btn btn-outline-dark"> M - Medium </button>
+                    <button type="button " class="btn btn-outline-dark"> L - Large </button>
+                    <button type="button " class="btn btn-outline-dark"> XL - Extra Large </button>
+                </div>
             </div>
-            
+        </div>
+    </section>
+    <footer class="yellow-div container-fluid  footer-shirts">
+        <div class="row justify-content-center">
+            <!--raremonk logo and social media links-->
+            <div class="col-12 col-sm-6">
+                <div class="col-12">
+                    <img id="logo-footer" class="wiggle" src="../images/raremonk_name.png" alt="logo">
+                </div>
+                <div class="col-12 social-footer-div">
+                    <a href="#"><img class="social-footer hvr-grow" src="../images/facebook.svg"
+                            alt="facebook-icon" /></a>
+                    <a href="#"><img class="social-footer hvr-grow" src="../images/instagram.svg"
+                            alt="instagram-icon" /></a>
+                    <a href="#"><img class="social-footer hvr-grow" src="../images/twitter.svg"
+                            alt="twitter-icon" /></a>
+                    <a href="#"><img class="social-footer hvr-grow" src="../images/linkedin.svg"
+                            alt="linkedin-icon" /></a>
+                </div>
+            </div>
+
         </div>
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
