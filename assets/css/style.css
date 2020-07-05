@@ -324,10 +324,6 @@ span.size-chart {
     text-align: center;
     width: 100%;
   }
-  .clothing-adjust {
-    height: 500px;
-  }
-
   button.btn.btn-outline-dark {
     margin: 0 0 10% 5%;
   }
@@ -340,9 +336,6 @@ span.size-chart {
     margin: 5% 0 2% 4.8%;
   }
 
-  .text-color-availability {
-
-  }
 
   #brand-text {
     width: 50%;
@@ -1065,9 +1058,6 @@ span.size-chart {
     width: 100%;
   }
 
-  .clothing-adjust {
-    height: 500px;
-  }
   button.btn.btn-outline-dark {
     margin: 0 0 10% 2.5%;
   }
