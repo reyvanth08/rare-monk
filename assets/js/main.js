@@ -2,7 +2,7 @@
 //3500 = 3.5 seconds i.e. the time it take for the preloader to dissappear
 $(document).ready(function() {
     //Preloader
-    const preloaderFadeOutTime = 3500;
+    const preloaderFadeOutTime = 2000;
     function hidePreloader() {
         var preloader = $('.spinner-wrapper');
         preloader.fadeOut(preloaderFadeOutTime);

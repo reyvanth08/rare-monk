@@ -77,16 +77,18 @@
                                     role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">PRODUCTS</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Varsity</a>
-                                    <a class="dropdown-item" href="#">Tees </a>
-                                    <a class="dropdown-item" href="#">Hoodies</a>
-                                    <a class="dropdown-item" href="#">Highneck </a>
-                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#varsity">Varsity</a>
+                                    <a class="dropdown-item" href="#tee">Tees </a>
+                                    <a class="dropdown-item" href="#hoodieClassic">Hoodies</a>
+                                    <a class="dropdown-item" href="#highNeckNav">Highneck </a>
+                                    <a class="dropdown-item" href="#polotees">Polo Tee </a>
+                                    <a class="dropdown-item" href="#others-div">Others </a>
+                                    <!-- <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Bottles</a>
                                     <a class="dropdown-item" href="#">Caps</a>
                                     <a class="dropdown-item" href="#">Keychains</a>
                                     <a class="dropdown-item" href="#">Watches</a>
-                                    <a class="dropdown-item" href="#">Mugs</a>
+                                    <a class="dropdown-item" href="#">Mugs</a> -->
                                 </div>
                             </div>
                             <div>
@@ -129,26 +131,26 @@
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a class="nav-link" onclick="closeNav()" href="#first-page">HOME</a>
                         <div>
-                            <a class="nav-link dropdown-toggle dropdown-btn"
-                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" >PRODUCTS</a>
+                            <a class="nav-link dropdown-toggle dropdown-btn" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Varsity</a>
-                                <a class="dropdown-item" href="#">Tees </a>
-                                <a class="dropdown-item" href="#">Hoodies</a>
-                                <a class="dropdown-item" href="#">Highneck </a>
-                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" onclick="closeNav()" href="#varsity">Varsity</a>
+                                <a class="dropdown-item" onclick="closeNav()" href="#tee">Tees </a>
+                                <a class="dropdown-item" onclick="closeNav()" href="#hoodieClassic">Hoodies</a>
+                                <a class="dropdown-item" onclick="closeNav()" href="#highNeckNav">Highneck </a>
+                                <a class="dropdown-item" onclick="closeNav()" href="#polotees">Polo Tee </a>
+                                <a class="dropdown-item" onclick="closeNav()" href="#others-div">Others Products</a>
+                                <!-- <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Bottles</a>
                                 <a class="dropdown-item" href="#">Caps</a>
                                 <a class="dropdown-item" href="#">Keychains</a>
                                 <a class="dropdown-item" href="#">Watches</a>
-                                <a class="dropdown-item" href="#">Mugs</a>
+                                <a class="dropdown-item" href="#">Mugs</a> -->
                             </div>
                         </div>
                         <div>
-                            <a class="nav-link dropdown-toggle dropdown-btn" href="#"
-                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">CORPORATE GIFTS</a>
+                            <a class="nav-link dropdown-toggle dropdown-btn" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CORPORATE GIFTS</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Varsity</a>
                                 <a class="dropdown-item" href="#">Tees </a>
@@ -313,7 +315,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item2 hvr-grow-shadow">
+                <div class="item2 hvr-grow-shadow" id="tee">
                     <a href="./assets/others/tshirts.html">
                         <img class="" id="tshirt" data-aos="fade-left" src="./assets/images/tshirt.png" alt="tshirt" />
                     </a>
@@ -355,12 +357,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="item6">
+                <div class="item6" id="highNeckNav">
                     <img id="highneck" data-aos="fade-left" src="./assets/images/highneck.png" alt="highneck-jacket" />
                 </div>
 
                 <!--classic hoodie section-->
-                <div class="item7">
+                <div class="item7" id="hoodieClassic">
                     <img id="classic" src="./assets/images/classic_hoodie.jpg" alt="" data-aos="fade-right">
                 </div>
                 <div class="item8">
@@ -391,7 +393,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item10">
+                <div class="item10" id="polotees">
                     <img id="polo" src="./assets/images/polo.png" alt="" data-aos="fade-left">
                 </div>
             </section>

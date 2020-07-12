@@ -151,13 +151,14 @@ span.size-chart {
 @media only screen and (max-width: 575px) {
   .sidenav {
     height: 100vh; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 0 ; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: scroll;
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
@@ -168,14 +169,16 @@ span.size-chart {
 
   /* The navigation menu links */
   .sidenav a {
-    font-size: 7vw;
+    text-transform: uppercase;
+    font-size: 6vw;
     color: #ffffff;
     display: block;
     transition: 0.3s;
     margin-right: 10%;
   }
   .dropdown-item {
-    font-size: 4vw;
+    font-size: 4vw !important;
+    margin-left: 60px;
   }
 
   /* When you mouse over the navigation links, change their color */
@@ -275,7 +278,7 @@ span.size-chart {
 
   #brand-tag-line {
     font-size: 9vw;
-    margin: 0 0% 5% 0%;
+    margin: 10px 0 5% 0%;
     text-align: center;
     width: 100%;
   }

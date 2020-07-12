@@ -19,18 +19,85 @@
 	<link rel="stylesheet" href="./style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="../assets/css/hover.css" type="text/css" media="all">
 	<script src="https://unpkg.com/feather-icons"></script>
+	<link rel="stylesheet" href="../assets/css/style.css" type="text/css" media="all">
+	<script src="../assets/js/main.js"></script>
 </head>
 
 <body>
-	<section id="contact">
-		<div class="container-fluid">
-			<div class="row yellow-div">
+    <section class="container-fluid">
+        <div id="" class="row">
+            <header class="col-12 ">
+                <nav id="nav" class="row container-fluid yellow-div main-header">
+                    <!--first two divs are for tablets and desktops-->
+                    <div id="logo-div" class="d-none d-sm-inline col-sm-6 text-left">
+                        <a href="#">
+                            <img class="logo-tshirts wiggle" src="../assets/images/raremonk_name.png" alt="raremonk-name">
+                        </a>
+                    </div>
+
+                    <!--main navigation links-->
+                    <div class="d-none d-sm-inline col-sm-6 nav-tshirts">
+                        <nav class="nav justify-content-end">
+                            <a class="nav-link hvr-underline-from-left" href="../../index.html#">HOME</a>
+                            <a class="nav-link hvr-underline-from-left" href="../../index.html#shop-tag">SHOP</a>
+                        </nav>
+                    </div>
+
+                    <!--popover that appears when you hover on browse-->
+                    <div class="browse d-none">
+                        <ul class="browse-main">
+                            <li><a href="#varsity" class="text-dark">Varsity Jacket</a></li>
+                            <li><a href="#tshirt" class="text-dark">Tees</a></li>
+                            <li><a href="#hoodie" class="text-dark">Hoodies</a></li>
+                            <li><a href="#highneck" class="text-dark">Highneck Jacket</a></li>
+                        </ul>
+                        <ul class="browse-other">
+                            <li><a href="#bottles" class="text-dark">Bottles</a></li>
+                            <li><a href="#cap" class="text-dark">Caps</a></li>
+                            <li><a href="#keyring" class="text-dark">Keychains</a></li>
+                            <li><a href="#watch" class="text-dark">Watches</a></li>
+                            <li><a href="#mug" class="text-dark">Mugs</a></li>
+                            <li><a href="#jeans" class="text-dark">Jeans</a> </li>
+                        </ul>
+                    </div>
+
+                    <!--hamburger menu icon in mobile sites-->
+                    <div id="menu" class="col-1 ham d-sm-none" onclick="openNav()">&#9776;</div>
+
+                    <!--these two divs are for mobile sites-->
+                    <!--mobile site brand name icon-->
+                    <div id="logo-mob" class="col-10 d-sm-none">
+                        <a href="#">
+                            <img class="logo-mob" src="../assets/images/raremonk_name.png" alt="raremonk-name">
+                        </a>
+                    </div>
+
+                    <!--navigation links in the side navigations-->
+                    <div id="mySidenav" class="sidenav d-sm-none">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a class="nav-link" onclick="closeNav()" href="../../index.html#">HOME</a>
+                        <a class="nav-link" onclick="closeNav()" href="../../index.html#shop-tag">SHOP</a>
+                        <a class="nav-link" onclick="closeNav()" href="../../index.html#order">ORDER NOW</a>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </section>
+	<section id="contact" class="yellow-div">
+		<div class="container-fluid ">
+			<div class="row ">
 				<div class="contact-wrapper  ">
 					<h1 class="section-header">ENQUIRE US!</h1>
 					<form class="form-horizontal" role="form" method="post" action="contact.php">
 						<div class="form-group">
 							<div class="col-sm-12">
-								<input type="text" class="form-control" id="name" placeholder="NAME" name="name"
+								<input type="text" class="form-control" id="names" placeholder="NAME" name="name"
+									value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="phone" class="form-control" id="phone" placeholder="Phone" name="phone"
 									value="">
 							</div>
 						</div>
@@ -46,9 +113,9 @@
 									name="message"></textarea>
 							</div>
 						</div>
-						<div class="button space">
+						<div class="">
 							<div class="col-sm-12">
-								<button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+								<button class="button" style="width: 100% !important;" id="submit" type="submit" value="SEND">
 									SEND
 								</button></div>
 						</div>

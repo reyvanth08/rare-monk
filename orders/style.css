@@ -45,7 +45,7 @@ html {
 
 .form-control,
 textarea {
-  max-width: 400px;
+  width: 100%;
   background-color: #fff;
   color: #111;
   letter-spacing: 1px;
@@ -175,9 +175,6 @@ hr {
 
 /* Begin Media Queries*/
 @media screen and (max-width: 760px) {
-  #contact {
-    height: 1000px;
-  }
   .section-header {
     font-size: 65px;
   }
@@ -203,8 +200,11 @@ hr {
 }
 
 @media screen and (max-width: 569px) {
-  #contact {
-    height: 1200px;
+  .send-button {
+    height: 34px;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
   }
   .section-header {
     font-size: 50px;
@@ -213,10 +213,6 @@ hr {
   .form-wrapper {
     float: none;
     margin: 0 auto;
-  }
-  .form-control,
-  textarea {
-    max-width: 340px;
   }
 
   .name,
@@ -251,14 +247,17 @@ hr {
   }
 
   .gmail {
-      width: 100%;
+    width: 100%;
     margin: 0 25px 0 0;
   }
 }
 
 @media screen and (max-width: 410px) {
   .send-button {
+    height: 34px;
     width: 92%;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
   }
   .place {
     margin: 0 60px 0 0;
