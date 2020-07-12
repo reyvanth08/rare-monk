@@ -72,33 +72,46 @@
                     <div class="d-none d-sm-inline col-sm-6">
                         <nav class="nav justify-content-end">
                             <a class="nav-link hvr-underline-from-left" href="#">HOME</a>
-                            <a class="nav-link hvr-underline-from-left" href="#shop-tag">SHOP</a>
-                            <a class="nav-link hvr-underline-from-left" href="#order">ORDER NOW</a>
-                            <a class="nav-link hvr-underline-from-left dropdown-toggle" data-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="true" aria-expanded="false">DOWNLOADS</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="/assets/docs/Raremonk-Catalogue.pdf"
-                                    download>CATALOGUE</a>
+                            <div>
+                                <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">PRODUCTS</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Varsity</a>
+                                    <a class="dropdown-item" href="#">Tees </a>
+                                    <a class="dropdown-item" href="#">Hoodies</a>
+                                    <a class="dropdown-item" href="#">Highneck </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Bottles</a>
+                                    <a class="dropdown-item" href="#">Caps</a>
+                                    <a class="dropdown-item" href="#">Keychains</a>
+                                    <a class="dropdown-item" href="#">Watches</a>
+                                    <a class="dropdown-item" href="#">Mugs</a>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="nav-link hvr-underline-from-left dropdown-toggle" href="#" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">CORPORATE GIFTS</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Varsity</a>
+                                    <a class="dropdown-item" href="#">Tees </a>
+                                    <a class="dropdown-item" href="#">Hoodies</a>
+                                    <a class="dropdown-item" href="#">Highneck </a>
+                                    <a class="dropdown-item" href="#">MUGS</a>
+                                </div>
+                            </div>
+                            <a class="nav-link hvr-underline-from-left" href="./orders/order.html">ENQUIRY</a>
+                            <div>
+                                <a class="nav-link hvr-underline-from-left dropdown-toggle" data-toggle="dropdown"
+                                    href="#" role="button" aria-haspopup="true" aria-expanded="false">DOWNLOADS</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/assets/docs/Raremonk-Catalogue.pdf"
+                                        download>CATALOGUE</a>
+                                </div>
                             </div>
                         </nav>
                     </div>
-                    <!--popover that appears when you hover on browse-->
-                    <!-- <div class="browse d-none">
-                        <ul class="browse-main">
-                            <li><a href="#varsity" class="text-dark">Varsity Jacket</a></li>
-                            <li><a href="#tshirt" class="text-dark">Tees</a></li>
-                            <li><a href="#hoodie" class="text-dark">Hoodies</a></li>
-                            <li><a href="#highneck" class="text-dark">Highneck Jacket</a></li>
-                        </ul>
-                        <ul class="browse-other">
-                            <li><a href="#bottles" class="text-dark">Bottles</a></li>
-                            <li><a href="#cap" class="text-dark">Caps</a></li>
-                            <li><a href="#keyring" class="text-dark">Keychains</a></li>
-                            <li><a href="#watch" class="text-dark">Watches</a></li>
-                            <li><a href="#mug" class="text-dark">Mugs</a></li>
-                            <li><a href="#jeans" class="text-dark">Jeans</a> </li>
-                        </ul>
-                    </div> -->
 
                     <!--hamburger menu icon in mobile sites-->
                     <div id="menu" class="col-1 ham d-sm-none" onclick="openNav()">&#9776;</div>
@@ -115,12 +128,43 @@
                     <div id="mySidenav" class="sidenav d-sm-none">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a class="nav-link" onclick="closeNav()" href="#first-page">HOME</a>
-                        <a class="nav-link" onclick="closeNav()" href="#shop-tag">SHOP</a>
-                        <a class="nav-link" onclick="closeNav()" href="#order">ORDER NOW</a>
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">DOWNLOADS</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item catalogue"  onclick="closeNav()" href="/assets/docs/Raremonk-Catalogue.pdf" download>CATALOGUE</a>
+                        <div>
+                            <a class="nav-link dropdown-toggle dropdown-btn"
+                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" >PRODUCTS</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Varsity</a>
+                                <a class="dropdown-item" href="#">Tees </a>
+                                <a class="dropdown-item" href="#">Hoodies</a>
+                                <a class="dropdown-item" href="#">Highneck </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Bottles</a>
+                                <a class="dropdown-item" href="#">Caps</a>
+                                <a class="dropdown-item" href="#">Keychains</a>
+                                <a class="dropdown-item" href="#">Watches</a>
+                                <a class="dropdown-item" href="#">Mugs</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="nav-link dropdown-toggle dropdown-btn" href="#"
+                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">CORPORATE GIFTS</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Varsity</a>
+                                <a class="dropdown-item" href="#">Tees </a>
+                                <a class="dropdown-item" href="#">Hoodies</a>
+                                <a class="dropdown-item" href="#">Highneck </a>
+                                <a class="dropdown-item" href="#">MUGS</a>
+                            </div>
+                            <a class="nav-link" href="./orders/order.html">ENQUIRY</a>
+                            <div>
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">DOWNLOADS</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item catalogue" onclick="closeNav()"
+                                        href="/assets/docs/Raremonk-Catalogue.pdf" download>CATALOGUE</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -999,6 +1043,22 @@
     <script src="./assets/js/main.js"></script>
     <script>
         feather.replace()
+    </script>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                // this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "none") {
+                    dropdownContent.style.display = "contents";
+                } else {
+                    dropdownContent.style.display = "none";
+                }
+            });
+        }
     </script>
 </body>
 
