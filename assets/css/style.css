@@ -103,7 +103,6 @@ html {
   }
 }
 
-
 @keyframes sk-foldCubeAngle {
   0%,
   10% {
@@ -147,11 +146,44 @@ span.size-chart {
   text-decoration: underline;
   cursor: pointer;
 }
+.w-100 {
+  height: 400px;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem !important;
+  background-color: #ffcc00 !important;
+  border: 1px solid #ffcc00 !important;
+}
+/* .carousel-item {
+  float: inherit!important;
+} */
+
 /*mobile css*/
 @media only screen and (max-width: 575px) {
+  /* .w-100 {
+    height: 400px;
+  } */
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem !important;
+    background-color: #ffcc00 !important;
+    border: 1px solid #ffcc00 !important;
+  }
+  .top-div {
+    padding-top: 80px;
+  }
+  .w-100 {
+    height: 150px;
+  }
+  .container {
+    height: 300px;
+  }
   .sidenav {
     height: 100vh; /* 100% Full-height */
-    width: 0 ; /* 0 width - change this with JavaScript */
+    width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -220,15 +252,15 @@ span.size-chart {
     background-color: #ffcc00;
   }
 
-  .dropdown-content{
+  .dropdown-content {
     display: none;
   }
 
   #first-page {
-    background-image: url(../images/bg.png);
+    /* background-image: url(../images/bg.png); */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 300px;
   }
 
   #logo-mob {
@@ -256,13 +288,14 @@ span.size-chart {
   }
 
   .logo {
-    width: 100%;
-    height: 150%;
+    width: 50%;
+    height: 100%;
   }
 
   #brand {
     position: relative;
-    top: -135px;
+    top: 50px;
+    margin-bottom: 150%;
   }
 
   .tag-line {
@@ -338,14 +371,12 @@ span.size-chart {
     margin: 0 0 10% 5%;
   }
 
-
   .text-content-about {
     margin: 0 0 0 5%;
-  } 
+  }
   .text-content-title {
     margin: 5% 0 2% 4.8%;
   }
-
 
   #brand-text {
     width: 50%;
@@ -956,7 +987,7 @@ span.size-chart {
   }
 
   #first-page {
-    background-image: url("../images/background_desktop.png");
+    /* background-image: url("../images/background_desktop.png"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 85% 85%;
@@ -1074,12 +1105,12 @@ span.size-chart {
   .image-div {
     margin-right: 10%;
   }
-  
+
   .text-content-title {
     margin: 0 0 0 4.8%;
   }
   .text-content-about {
-    margin: 3% 0 1% 5% ;
+    margin: 3% 0 1% 5%;
   }
 
   .center-div {
@@ -1718,6 +1749,10 @@ span.size-chart {
   #seo-content ul {
     margin: 2% 5% 2% 5%;
   }
+
+  .top-div {
+    padding-top: 40px;
+  }
 }
 .yellow-div-varities {
   background-color: #ffcc00;
@@ -1727,7 +1762,6 @@ span.size-chart {
   margin: 5% 0 2% -2%;
   text-align: center;
 }
-
 
 .btn-group button:not(:last-child) {
   border-bottom: none;
@@ -1741,10 +1775,6 @@ span.size-chart {
 .text-color-buttons {
   padding: 10px;
   font-size: 24px;
-}
-
-.top-div {
-  padding-top: 75px;
 }
 
 .logo-tshirts {
@@ -1774,3 +1804,6 @@ span.size-chart {
   color: #111;
 }
 
+/* .carousel-caption{
+  bottom: 300px;
+} */
