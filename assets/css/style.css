@@ -232,6 +232,9 @@ span.size-chart {
     font-size: 2.5em;
     margin: 5% 0 0 0;
   }
+  .side-img {
+    text-align: center;
+  }
 
   /* The navigation menu links */
   .sidenav a {
